@@ -1,0 +1,38 @@
+:root {
+    --tamanhocard: calc(100vw / 3);
+}
+
+body {
+   background-color: aliceblue; 
+}
+
+.container {
+    text-align: center;
+    float: left;
+    width: var(--tamanhocard);
+    min-width: 360px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container figure {
+    /* border: 1px solid; */
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255); 
+     
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100vw;
+    }
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
