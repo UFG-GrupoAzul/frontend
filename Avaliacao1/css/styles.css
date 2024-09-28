@@ -1,38 +1,67 @@
-:root {
-    --tamanhocard: calc(100vw / 3);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-   background-color: aliceblue; 
+    font-family: 'Arial', sans-serif;
+    background-color: black; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
+    max-width: 400px;
+    padding: 30px; 
+    background: white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
     text-align: center;
-    float: left;
-    width: var(--tamanhocard);
-    min-width: 360px;
+    color: #333; 
+    margin-bottom: 20px; 
 }
 
-.container img {
+input {
     width: 100%;
-    height: auto;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #dfd9d9;
+    border-radius: 5px;
+    transition: border-color 0.3s; 
 }
 
-.container figure {
-    /* border: 1px solid; */
-    margin: 5px;
-    padding: 5px;
-    background-color: rgb(255, 255, 255); 
-     
+input:focus {
+    border-color: #28a745;
+    outline: none; 
 }
 
-@media screen and (max-width: 500px) {
-    .container {
-        width: 100vw;
-    }
+button {
+    width: 100%;
+    padding: 10px; 
+    margin: 10px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; 
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
+button:hover {
+    background-color: #218838; 
+    transform: translateY(-2px); 
+}
+
+button:active {
+    transform: translateY(0); 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); 
 }
