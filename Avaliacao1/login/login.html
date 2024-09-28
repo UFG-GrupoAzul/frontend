@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - E-commerce</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form id="loginForm">
+        <form action="../produto/lista.html" id="loginForm"   method="get">
             <input type="text" id="usuario" placeholder="Usuário" required>
             <input type="password" id="senha" placeholder="senha" required>
-            <button type="button" id="confirmar">Confirmar</button>
-            <button type="button" id="cadastrar"> Cadastrar novo Usuário</button>
+
+            <button type="submit" id="Login"> Login</button>
+            <a href="../usuario/cadastro.html" class="button">Novo cadastro de usuário</a>
+
+            
         </form>
 
 
