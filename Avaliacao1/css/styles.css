@@ -3,3 +3,12 @@
     float: left;
     border: 1px solid;
 }
+
+  section img {
+        width: 400px;
+        height: auto;
+    }
+
+figcaption:first-of-type {
+    font-weight: bold;
+}
