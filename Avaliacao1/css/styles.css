@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7; 
+    background-color: black; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,7 +20,7 @@ body {
 
 .container {
     max-width: 400px;
-    padding: 30px; /* Corrected comment */
+    padding: 30px; 
     background: white;
     border-radius: 8px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
@@ -42,7 +42,7 @@ input {
 }
 
 input:focus {
-    border-color: #28a745; /* Corrected comment */
+    border-color: #28a745;
     outline: none; 
 }
 
@@ -65,10 +65,10 @@ button:hover {
 }
 
 button:active {
-    transform: translateY(0); /* Retorna à posição original */
+    transform: translateY(0); 
 }
 
 button:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Brilho ao focar */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); 
 }
