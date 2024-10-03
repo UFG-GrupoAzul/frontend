@@ -29,16 +29,18 @@ body {
 /* Título */
 h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 22px;
     color: #333333;
     margin-bottom: 20px;
     font-weight: 600;
+    font-weight: 600; 
 }
 
 /* Formulário */
 form {
     display: flex;
     flex-direction: column;
+    
 }
 
 /* Grupo de formulário */
