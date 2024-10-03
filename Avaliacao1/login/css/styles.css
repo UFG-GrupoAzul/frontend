@@ -3,7 +3,7 @@
 body {
     font-family: 'Inter', sans-serif; 
     background-color: black;
-    background-image: url('https://img.freepik.com/fotos-gratis/carros-esporte-sedan-verde-amarelo-vermelho-roxo-e-violeta-em-pe-no-espaco-escuro_114579-1159.jpg');
+    background-image: url('https://retornar.com.br/wp-content/uploads/2023/08/Carros-JDM-4-O-que-e-JDM.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 .container {
     max-width: 400px;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.9); 
+    background: rgba(15, 14, 14, 0.9); 
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
