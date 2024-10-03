@@ -18,7 +18,9 @@ body {
     height: auto;
 }
 
-.container div
+.container image {
+    
+}
 
 .container figure {
     /* border: 1px solid; */
@@ -28,9 +30,16 @@ body {
      height: 580px;
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 720px) {
     .container {
-        width: 100vw;
+        width: calc(100% / 1);
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+    .container {
+        width: calc(100% / 2);
     }
 }
 
