@@ -1,49 +1,108 @@
-:root {
-    --tamanhocard: calc(100% / 3);
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-   background-color: aliceblue; 
-}
-
-.container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
     text-align: center;
-    float: left;
-    width: var(--tamanhocard);
-    min-width: 360px;
 }
 
-.container img {
-    width: 100%;
-    height: auto;
+/* Estilização para o título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
-.container image {
-    
+/* Centralizando o formulário */
+form {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.container figure {
-    /* border: 1px solid; */
-    margin: 5px;
-    padding: 5px;
-    background-color: rgb(255, 255, 255); 
-     height: 580px;
-}
-
-
-@media screen and (max-width: 720px) {
-    .container {
-        width: calc(100% / 1);
-    }
-}
-
-@media (min-width: 720px) and (max-width: 1080px) {
-    .container {
-        width: calc(100% / 2);
-    }
-}
-
+/* Estilização da seção */
 section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos para os containers */
+.container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(33.333% - 20px); /* Três colunas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para as imagens */
+.container .image img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Tamanho máximo da imagem */
+    border-radius: 5px;
+}
+
+/* Estilos para as informações do carro */
+.dados {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.dados figcaption {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilo para os checkboxes */
+.dados div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: calc(50% - 20px); /* Duas colunas em telas médias */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%; /* Uma coluna em telas pequenas */
+    }
+}
+
+/* Estilo para o botão de confirmação */
+button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
