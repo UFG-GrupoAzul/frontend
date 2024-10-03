@@ -72,6 +72,27 @@ section {
     color: #555;
 }
 
+.container .dados .nome {
+    text-align: center;
+}
+
+.container .dados .valor {
+    text-align: center;
+    font: bold;
+}
+
+.container .dados .rating {
+    text-align: center;
+}
+
+.container .dados .descricao {
+    text-align: center;
+}
+
+.container figure figcaption:nth-of-type(2) {
+    font-weight: bold;
+  }
+
 /* Estilo para os checkboxes */
 .dados div {
     margin-top: 10px;
