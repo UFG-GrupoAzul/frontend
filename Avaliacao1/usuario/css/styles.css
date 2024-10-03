@@ -93,14 +93,14 @@ legend {
     font-size: 16px;
     font-weight: 600;
     padding: 0 10px;
-    color: #4a90e2;
+    color: #28a745;
 }
 
 /* Botão de envio */
 button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #4a90e2;
+    background-color: #28a745;
     border: none;
     border-radius: 6px;
     color: #ffffff;
@@ -112,7 +112,7 @@ button[type="submit"] {
 
 /* Efeito hover no botão */
 button[type="submit"]:hover {
-    background-color: #357ABD;
+    background-color: #19722d;
 }
 
 /* Efeito ao clicar no botão */
