@@ -34,12 +34,25 @@ label {
     color: #555;
 }
 
-select, input {
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #d1d3d4;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .btn {

@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-    <div class="container">
-        <h2>Pagamento</h2>
-        <div class="form-group-select">
-            <label for="bandeira">Bandeira do Cartão</label>
-            <select id="bandeira">
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="amex">American Express</option>
-            </select>
+<body>
+    <form>
+        <div class="container">
+            <h2>Pagamento</h2>
+            <div class="form-group-select">
+                <label for="bandeira">Bandeira do Cartão</label>
+                <select id="bandeira">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número do Cartão</label>
+                <input type="number" id="numero" placeholder="Digite o número do cartão" required 
+                oninvalid="this.setCustomValidity('Por favor, insira o número do cartão')" oninput="setCustomValidity('')">
+            </div>
+            <div class="form-group">
+                <label for="validade">Data de Expiração</label>
+                <input type="text" id="validade" placeholder="MM/AA" maxlength="5" pattern="\d{2}/\d{2}" required
+                    oninvalid="this.setCustomValidity('Por favor, insira a data de expiração no formato MM/AA')" oninput="setCustomValidity('')">
+            </div>
+            <div class="form-group">
+                <label for="codigo">Código de Segurança</label>
+                <input type="text" id="codigo" placeholder="Digite o código de segurança" pattern="\d{3}" maxlength="3"
+                    required  oninvalid="this.setCustomValidity('Por favor, insira um código de segurança válido (3 dígitos)')" oninput="setCustomValidity('')">
+            </div>
+            <button class="btn" onclick="finalizarCompra()">Finalizar</button>
+
+            <div class="resumo-compra" id="resumoCompra">
+                <h3>Compra realizada com sucesso!</h3>
+                <ul>
+                    <li><strong>Produtos:</strong> Produto 1, Produto 2</li>
+                    <li><strong>Quantidade:</strong> 2</li>
+                    <li><strong>Preços:</strong> R$50,00 + R$30,00</li>
+                    <li><strong>Forma de Pagamento:</strong> Cartão (Visa)</li>
+                    <li><strong>Valor Total:</strong> R$80,00</li>
+                </ul>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="numero">Número do Cartão</label>
-            <input type="number" id="numero" placeholder="Digite o número do cartão">
-        </div>
-        <div class="form-group">
-            <label for="validade">Data de Expiração</label>
-            <input type="text" id="validade" placeholder="MM/AA">
-        </div>
-        <div class="form-group">
-            <label for="codigo">Código de Segurança</label>
-            <input type="text" id="codigo" placeholder="Digite o código de segurança">
-        </div>
-        <button class="btn" onclick="finalizarCompra()">Finalizar</button>
-        
-        <div class="resumo-compra" id="resumoCompra">
-            <h3>Compra realizada com sucesso!</h3>
-            <ul>
-                <li><strong>Produtos:</strong> Produto 1, Produto 2</li>
-                <li><strong>Quantidade:</strong> 2</li>
-                <li><strong>Preços:</strong> R$50,00 + R$30,00</li>
-                <li><strong>Forma de Pagamento:</strong> Cartão (Visa)</li>
-                <li><strong>Valor Total:</strong> R$80,00</li>
-            </ul>
-        </div>
-    </div>
+
+    </form>
 
     <script>
         function finalizarCompra() {
@@ -51,4 +58,5 @@
     </script>
 
 </body>
+
 </html>
