@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Container principal */
+#formulario .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    padding: 30px;
+    margin: 20px;
+}
+
+/* Título */
+#formulari h1 #login {
+    text-align: center;
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-weight: 600; 
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Grupo de formulário */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Rótulos */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d3d4;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Efeito ao focar no campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Fieldset e Legend */
+fieldset {
+    border: 1px solid #d1d3d4;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: #28a745;
+}
+
+
+button,
+.button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #28a745;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #0056b3;
+    text-decoration: auto;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Espaçamento interno maior para o container */
+.container form {
+    padding: 0 10px;
+}

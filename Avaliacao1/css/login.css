@@ -1,0 +1,177 @@
+:root {
+    --verde: #28a745;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Login */
+body #formLogin {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    background-image: url('https://retornar.com.br/wp-content/uploads/2023/08/Carros-JDM-4-O-que-e-JDM.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-login {
+    max-width: 400px;
+    padding: 30px;
+    background: rgb(39 22 3 / 56%);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Formulario */
+body #formulario {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#formulario .container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    padding: 30px;
+    margin: 20px;
+}
+
+#formLogin h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#formulario h1 {
+    text-align: center;
+    font-size: 22px;
+    color: var(--verde);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Fieldset e Legend */
+fieldset {
+    border: 1px solid #d1d3d4;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+    color: var(--verde);
+}
+
+/* Rótulos */
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555555;
+}
+
+
+/* Efeito ao focar no campo */
+input,
+select {
+    width: calc(100%);
+    padding: 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    background-color: #fafafa;
+}
+
+#formLogin input {
+    margin: 10px 0;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--verde);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Remove o spin do input number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button,
+.button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--verde);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0056b3;
+    text-decoration: auto;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button:focus,
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+
+}
