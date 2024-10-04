@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="../sucesso/efetiva.html" method="POST">
         <div class="container">
             <h2>Pagamento</h2>
             <div class="form-group-select">
@@ -39,9 +39,9 @@
                     oninvalid="this.setCustomValidity('Por favor, insira um código de segurança válido (3 dígitos)')"
                     oninput="setCustomValidity('')">
             </div>
-            <button class="btn" onclick="finalizarCompra()">Finalizar</button>
+            <button type="submit" class="btn">Finalizar</button>
 
-            <div class="resumo-compra" id="resumoCompra">
+            <!-- <div class="resumo-compra" id="resumoCompra">
                 <h3>Compra realizada com sucesso!</h3>
                 <ul>
                     <li><strong>Produtos:</strong> Produto 1, Produto 2</li>
@@ -50,17 +50,10 @@
                     <li><strong>Forma de Pagamento:</strong> Cartão (Visa)</li>
                     <li><strong>Valor Total:</strong> R$80,00</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
 
     </form>
-
-    <script>
-        function finalizarCompra() {
-            document.getElementById('resumoCompra').style.display = 'block';
-        }
-    </script>
-
 </body>
 
 </html>
