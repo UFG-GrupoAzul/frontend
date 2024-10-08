@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/Should-I-do-Standard-Maths-or-Advanced-Maths_-1.webp');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.container {
+    background-color: aliceblue;
+    text-align: center;
+    border: 5px solid #9a9696;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(24, 100, 5, 0.455);
+}
+
+h3{
+    color:#9a9696
+}
+
+input {
+    padding: 9px;
+    font-size: 16px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #378f3a;
+    color: white;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
