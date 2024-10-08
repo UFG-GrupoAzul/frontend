@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média do Aluno</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./media-aluno.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Média</h1>
+        <form id="mediaForm">
+            <input type="text" id="nomeAluno" placeholder="Nome do aluno" required>
+            <input type="text" id="disciplina" placeholder="Disciplina" required>
+            <input type="number" id="nota1" placeholder="Nota 1" required>
+            <input type="number" id="nota2" placeholder="Nota 2"required>
+            <button type="button" onclick="calcularNotaAluno()">Calcular Média</button>
+        </form>
+        <div class="result" id="resultado"></div>
+    </div> 
+    
+</body>
+
+</html>
