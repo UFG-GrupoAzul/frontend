@@ -17,10 +17,10 @@ function verificarNumero() {
     }
 
     if (numeroInt % 2 === 0) {
-        resultado.textContent = `O número ${numeroInt} é Par.`;
+        resultado.textContent = `O número ${numeroInt} que foi digitado é Par.`;
         resultado.style.color = "green";
     } else {
-        resultado.textContent = `O número ${numeroInt} é Ímpar.`;
+        resultado.textContent = `O número ${numeroInt} que foi digitado é Ímpar.`;
         resultado.style.color = "blue";
     }
     document.getElementById("numero").value = null;
