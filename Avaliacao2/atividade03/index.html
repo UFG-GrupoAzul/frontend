@@ -18,7 +18,9 @@
             <div class="flex-item col-12 input-label">
                 <label for="dataNascimento">Digite o ano de nascimento</label>
                 <!-- <input id="dataNascimento" type="date" placeholder="DD/MM/AAAA" max="" /> -->
-                <input id="dataNascimento" type="number" min="0" max="2023" pattern="\d{4}" min="1900" placeholder="Ano mínimo 1900"/>
+                <input id="dataNascimento" type="number" min="0" pattern="\d{4}" min="1900" required
+                    placeholder="Ano mínimo 1900" oninvalid="this.setCustomValidity('Por favor, insira um número entre 1900 e o ano atual.')"
+                    oninput="setCustomValidity('')" />
             </div>
             <div class="flex-item col-12">
                 <button type="submit" onclick="calcularIdade()">Calcular</button>
