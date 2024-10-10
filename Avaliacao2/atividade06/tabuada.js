@@ -11,7 +11,7 @@ function getValor() {
     return numero;
 }
 
-function tabuadaAdicao() {
+function calcTabuadaAdicao() {
     let resultSoma = new Array(10);
     let valor = getValor();
     operacao = "adição";
@@ -26,7 +26,7 @@ function tabuadaAdicao() {
 }
 
 
-function tabuadaSubtracao() {
+function calcTabuadaSubtracao() {
     let resultSubtracao = new Array(10);
     let valor = getValor();
     operacao = "subtração";
@@ -40,7 +40,7 @@ function tabuadaSubtracao() {
 }
 
 
-function tabuadaMultiplicacao() {
+function calcTabuadaMultiplicacao() {
     let resultMultiplicacao = new Array(10);
     let valor = getValor();
     operacao = "multiplicação";
@@ -55,7 +55,7 @@ function tabuadaMultiplicacao() {
 }
 
 
-function tabuadaDivisao() {
+function calcTabuadaDivisao() {
     let resultDivisao = new Array(10);
     let valor = getValor();
     let j = 1;
