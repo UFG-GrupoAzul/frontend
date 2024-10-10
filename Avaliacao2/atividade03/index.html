@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/calcula-idade.js"></script>
+</head>
+
+<body>
+    <form id="formIdade" onsubmit="return false;">
+        <div class="conteudo flex-container">
+            <div class="flex-item col-12">
+                <h1 class="centralizado">Calculadora de Idade</h1>
+            </div>
+            <div class="flex-item col-12 input-label">
+                <label for="dataNascimento">Digite o ano de nascimento</label>
+                <!-- <input id="dataNascimento" type="date" placeholder="DD/MM/AAAA" max="" /> -->
+                <input id="dataNascimento" type="number" min="0" max="2023" pattern="\d{4}" min="1900" placeholder="Data mínima 1900"/>
+            </div>
+            <div class="flex-item col-12">
+                <button type="submit" onclick="calcularIdade()">Calcular</button>
+            </div>
+            <div id="resultado"></div>
+        </div>
+    </form>
+</body>
+
+</html>
