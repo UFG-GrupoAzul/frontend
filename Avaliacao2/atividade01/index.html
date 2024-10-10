@@ -12,16 +12,24 @@
 <body>
     <div class="container">
         <h1>Calculadora de Média</h1>
-        <form id="mediaForm">
-            <input type="text" id="nomeAluno" placeholder="Nome do aluno" required>
-            <input type="text" id="disciplina" placeholder="Disciplina" required>
-            <input type="number" id="nota1" placeholder="Nota 1" required>
-            <input type="number" id="nota2" placeholder="Nota 2"required>
-            <button type="button" onclick="calcularNotaAluno()">Calcular Média</button>
+        <form id="mediaForm" onsubmit="calcularNotaAluno(event)">
+            <input type="text" id="nomeAluno" placeholder="Nome do aluno" required
+                oninvalid="this.setCustomValidity('Por favor, insira o nome do aluno(a)')"
+                oninput="setCustomValidity('')">
+            <input type="text" id="disciplina" placeholder="Disciplina" required
+            oninvalid="this.setCustomValidity('Por favor, insira a disciplina')"
+            oninput="setCustomValidity('')">
+            <input type="number" id="nota1" placeholder="Nota 1" required
+            oninvalid="this.setCustomValidity('Por favor, insira nota 1')"
+            oninput="setCustomValidity('')">
+            <input type="number" id="nota2" placeholder="Nota 2" required
+            oninvalid="this.setCustomValidity('Por favor, insira nota 2')"
+            oninput="setCustomValidity('')">
+            <button type="submit">Calcular Média</button>
         </form>
         <div class="result" id="resultado"></div>
-    </div> 
-    
+    </div>
+
 </body>
 
 </html>
