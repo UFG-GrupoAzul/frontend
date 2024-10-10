@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <script src="./tabuada.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tabuada</h1>
+        <form id="tabuadaForm">
+            <input type="number" id="numero" placeholder="número" min="0">
+            <div id="buttonContainer">
+                <button type="button" onclick="tabuadaAdicao()">adição</button>
+                <button type="button" onclick="tabuadaSubtracao()">subtração</button>
+                <button type="button" onclick="tabuadaMultiplicacao()">multiplicação</button>
+                <button type="button" onclick="tabuadaDivisao()">divisão</button>
+            </div>
+        </form>
+        <div class="result" id="resultTabuada"></div>
+    </div>
+</body>
+
+</html>
