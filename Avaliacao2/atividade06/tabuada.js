@@ -35,7 +35,6 @@ function tabuadaSubtracao() {
         for (let i = 0; i < 10; i++) {
             resultSubtracao[i] = (i + valor + 1) - valor;
         }
-        // debugger
         printResultTabuada(resultSubtracao, valor);
     }
 }
