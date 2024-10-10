@@ -1,0 +1,80 @@
+/* Estilo básico para toda a página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/fundo-tela.jpg");
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+}
+
+/* Título da página */
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Estilo do input */
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Container dos botões */
+#buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Área de resultado */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Resposta ao ser exibida */
+.result p {
+    margin: 0;
+    padding: 5px;
+}
