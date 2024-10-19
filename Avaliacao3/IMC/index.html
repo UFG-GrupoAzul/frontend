@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./calcularIMC.js"></script>
 </head>
 <body>
 
@@ -16,15 +17,14 @@
     <h2>Calculadora IMC</h2>
 
     <h4>Digite sua altura</h4>
-    <input type="number" id="alteura" placeholder="Digite o primeiro operador">
+    <input type="number" id="altura" placeholder="altura em cm">
 
     <h4>Digite seu peso</h4>
-    <input type="number" id="peso" placeholder="Digite um segundo operador">
+    <input type="number" id="peso" placeholder="peso em kg">
     <br><br>
-    
-    <button type="button" onclick="limparCampos()">Limpar</button>
 
-    <button type="button" onclick="calculadora()">Calcular</button>
+    <button id="calcular">Calcular</button>
+    <button id="limpar">Limpar</button>
 
     
 </body>
