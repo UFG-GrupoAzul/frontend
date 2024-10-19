@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./calcularIMC.js"></script>
 </head>
+
 <body>
 
     <!--
@@ -17,7 +18,7 @@
     <h2>Calculadora IMC</h2>
 
     <h4>Digite sua altura</h4>
-    <input type="number" id="altura" placeholder="altura em cm">
+    <input type="number" id="altura" placeholder="altura em cm, ex: 170">
 
     <h4>Digite seu peso</h4>
     <input type="number" id="peso" placeholder="peso em kg">
@@ -26,6 +27,13 @@
     <button id="calcular">Calcular</button>
     <button id="limpar">Limpar</button>
 
-    
+    <br><br>
+    <div id="resultado"></div>
+
+    <div id="tabela"></div>
+
+    <script src="./calcularIMC.js"></script>
+
 </body>
+
 </html>
