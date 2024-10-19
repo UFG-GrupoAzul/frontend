@@ -1,4 +1,4 @@
-/* Estilos gerais para o corpo da página */
+/* estilo página html */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -10,9 +10,9 @@ body {
     height: 100vh;
 }
 
-/* Container centralizado para a calculadora */
+/* Centralizar container */
 .conteiner {
-    background-color: white;
+    background-color: rgba(12, 221, 228, 0.089);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,9 +28,9 @@ table {
 
 th, td {
     border: 2px solid black;
-    /* Define a espessura da borda */
+    /* Expessura borda */
     padding: 10px;
-    /* Define o espaçamento interno */
+    /* espaçamento interno */
     text-align: left;
     /* Alinhamento do texto */
 }
@@ -45,7 +45,7 @@ tr:hover {
     /* Cor de fundo ao passar o mouse */
 }
 
-/* Estilos para os títulos */
+/* Estilo títulos */
 h2 {
     color: #333;
     margin-bottom: 20px;
@@ -56,10 +56,10 @@ h4 {
     color: #555;
     margin-bottom: 10px;
     font-size: 18px;
-    margin-top:  0px;
+    margin-top: 0px;
 }
 
-/* Estilos para os campos de entrada */
+
 input[type="number"] {
     width: calc(100% - 300px);
     padding: 10px;
@@ -74,7 +74,7 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #4CAF50;
+    background-color: #3c7a3d;
     color: white;
     font-size: 16px;
     cursor: pointer;
