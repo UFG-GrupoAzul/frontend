@@ -37,3 +37,4 @@ function calculadora() {
     document.querySelector("#resultado").value = resultado
 
 }
+document.getElementById("calcular").addEventListener("click",calculadora)
