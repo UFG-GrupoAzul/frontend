@@ -1,5 +1,6 @@
 function limparCampos() {
-  document.getElementById("altura").value = "";
+  document.getElementById("altura").value ="";
+  document.querySelector("#resultado").innerHTML = "";
   document.getElementById("peso").value = "";
 }
 
