@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./calculadora.js"></script>
 </head>
 <body>
 
 
-    /*  - Campo para Operador 1
-        - Campo para Operador 2
-        - Seletor de Operação 
+ <!-- <--! - Campo para Operador 1  Check
+        - Campo para Operador 2     Check
+        - Seletor de Operação       Check
         - Botão para calcular (exibir resultado)
         - Campo para exibir o resultado
         - Validações necessárias:
         1 entrada (número/letra)
         2 pra calcular precisa ter os dois operadores
-        3 divisão por zero
-        */
+        3 divisão por zero -->
+
+
+        <container>
+
+            <input type="number" id="numero1" placeholder="Digite o primeiro operador">
+
+            <input type="number" id="numero2" placeholder="Digite um segundo operador">
+
+            <label for="operadores">Escolha uma operação:</label>
+            <select id="operadores" name="operadores">
+                <option value="1">+</option>
+                <option value="2">-</option>
+                <option value="3">*</option>
+                <option value="4">/</option>
+            </select>
+
+            <button onclick="calculadora()">Calcular</button>
+
+
+
+
+
+        </container>
+
     
 </body>
 </html>
