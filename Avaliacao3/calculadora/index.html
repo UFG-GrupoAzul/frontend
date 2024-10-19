@@ -19,22 +19,28 @@
         2 pra calcular precisa ter os dois operadores
         3 divisão por zero -->
 
-
+        <h2>Calculadora</h2>
         <container>
 
+            <h4>Insira o primeiro número</h4>
             <input type="number" id="numero1" placeholder="Digite o primeiro operador">
+            <h4>Insira o segundo número</h4>
 
             <input type="number" id="numero2" placeholder="Digite um segundo operador">
-
+            <br><br>
             <label for="operadores">Escolha uma operação:</label>
             <select id="operadores" name="operadores">
-                <option value="1">+</option>
-                <option value="2">-</option>
-                <option value="3">*</option>
-                <option value="4">/</option>
+                <option value="soma">+</option>
+                <option value="subtracao">-</option>
+                <option value="multiplicacao">*</option>
+                <option value="divisao">/</option>
             </select>
+            <br><br>
 
-            <button onclick="calculadora()">Calcular</button>
+            <input type="number" id="resultado" placeholder="Resultado" readonly>
+
+
+            <button type="button" onclick="calculadora()">Calcular</button>
 
 
 
