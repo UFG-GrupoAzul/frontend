@@ -37,4 +37,9 @@ function calculadora() {
     document.querySelector("#resultado").value = resultado
 
 }
+<<<<<<< Updated upstream
 document.getElementById("calcular").addEventListener("click",calculadora)
+=======
+
+document.getElementById("calcular").addEventListener("click", calculadora);
+>>>>>>> Stashed changes
